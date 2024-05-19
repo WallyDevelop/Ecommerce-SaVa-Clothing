@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito SaVa Clothing</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+    <!-- Contenedor General del carrito. -->
+    <div class="wrapper">
+        <!-- Barra o contonedor izquierdo donde de se encuentran los botones dentro del apartado de carrito.-->
+        <aside>
+            <!-- Cabecera o titulo de la empresa, de la barra de navegacion -->
+            <header>
+                <h1 class="logo">SaVa Clothing</h1>
+            </header>
+            <nav> <!-- Nombre de los botones del carrito. -->
+                <ul>
+                    <li><a class="boton-menu boton-volver" href="index.html"><i class="bi bi-arrow-return-left"></i>Seguir comprando </a></li>
+                    </li><a class="boton-menu boton-carrito active" href="carrito.html"><i class="bi bi-cart3"></i>Carrito</a></li>
+                </ul>
+            </nav>
+            <footer> <!-- copyright. -->
+                <p class="texto-footer">© 2024 SaVa Clothing Store</p>
+            </footer>
+        </aside>
+        <main> <!-- Apartado principal del carrito-->
+            <h2 class="titulo-principal">Carrito</h2> <!-- Titulo principal -->
+            <div class="contenedor-carrito">
+                <!-- Mensaje cuando no se ha elegido producto. -->
+                <p id="carrito-vacio" class="carrito-vacio">Aún no has elegido productos <i class="bi bi-cart-x"></i></p>
+                    <div id="carrito-productos" class="carrito-productos disabled"> <!-- Aqui aparecen todos los productos que se han elegido-->
+                        <!-- Esto se va completar con el JS-->
+                    </div>
+                    <!-- Este contenedor se encarga de las acciones a realizar dentro del carrito-->
+                    <div id="carrito-acciones" class="carrito-acciones disabled"> 
+                        <!-- Boton de vaciar carrito-->
+                        <div class="carrito-acciones-izquierda"> 
+                           <button id="carrito-acciones-vaciar" class="carrito-acciones-vaciar">Vacias carrito</button> 
+                        </div>
+                        <!-- Contenedor de total y presio-->
+                        <div class="carrito-acciones-derecha">
+                            <div class="carrito-acciones-total">
+                                <p>Total</p>
+                                <p id="total">$60000</p>
+                            </div>
+                            <!-- Boton comprar ahora -->
+                            <button id="carrito-acciones-comprar" class="carrito-acciones-comprar">Comprar Ahora</button>
+                        </div>
+                    </div>
+                    <!-- Mensaje de agradecimiento por la compra. -->
+                    <p id="carrito-comprado" class="carrito-comprado disabled">Muchas gracias por tu compra <i class="bi bi-emoji-laughing"></i></p>
+                </div>
+
+            </div>
+        </main>
+    </div>
+    <!-- Este es el archivo que nos importar el JS al HTML para que se le puedan hacer modificaciones. -->
+    <script src="/js/carrito.js"></script>
+</body>
+</html>
