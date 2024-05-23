@@ -2,6 +2,8 @@
 let productosEnCarrito = localStorage.getItem("productos-en-carrito");
 productosEnCarrito = JSON.parse(productosEnCarrito);
 
+contenedorCarritoProductos.innerHTML = "";
+
 // Variables que permiten obtener cada uno de los elementos del HTML para trabajarlos dentro del carrito.
 const contenedorCarritoVacio = document.querySelector("#carrito-vacio");
 const contenedorCarritoProductos = document.querySelector("#carrito-productos");
