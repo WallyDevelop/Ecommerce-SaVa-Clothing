@@ -15,7 +15,9 @@ const botonComprar = document.querySelector("#carrito-acciones-comprar");
 // Funcion que nos permite cargar todos los productos que se han seleccionado. 
 function cargarProductosCarrito() {
     if(productosEnCarrito && productosEnCarrito.length > 0) {
-
+        
+        contenedorCarritoProductos.innerHTML = "";
+        
         // Agregamos y quitamos nuevos nombres de clase a los que se habian puesto en el HTML
         contenedorCarritoVacio.classList.add("disabled");
         contenedorCarritoProductos.classList.remove("disabled");
